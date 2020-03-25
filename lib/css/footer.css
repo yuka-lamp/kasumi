@@ -1,11 +1,162 @@
 /*--------------------------------------
-ヘッダー
+フッター
 --------------------------------------*/
+#footer {
+  background: #fff;
+  position: relative;
+}
 
 @media(max-width:1025px) {
   /*--スマホよこ--*/
+  #footer .flex {
+    display: block;
+  }
 }
 
 @media(max-width:480px) {
   /*--スマホたて--*/
+}
+
+/*------ content-01 ------*/
+#footer .content-01 {
+  background: url('../images/common/bg_washi.png');
+  background-repeat: repeat;
+}
+
+/*-- left --*/
+#footer .content-01 .left {
+  background: #EFEDE5;
+  width: 20%;
+}
+
+#footer .content-01 .left a {
+  width: 128px;
+  height: 128px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media(max-width:1025px) {
+  /*--スマホよこ--*/
+  #footer .content-01 .left {
+    width: 100%
+  }
+}
+
+@media(max-width:480px) {
+  /*--スマホたて--*/
+}
+
+#footer .content-01 .left a img {
+  width: 100%
+}
+
+/*-- right --*/
+#footer .content-01 .right {
+  width: 80%;
+  padding: 2rem 4rem;
+  box-sizing: border-box;
+}
+
+#footer .content-01 .right p {
+  font-size: 1.2rem
+}
+
+#footer .content-01 .right .right-l, #footer .content-01 .right .right-r {
+  width: 50%;
+}
+
+#footer .content-01 .right .right-l p {
+  font-size: .9rem;
+  margin: 0 0 10px 0;
+  line-height: 1.2
+}
+
+#footer .content-01 .right .right-l p a {
+  background: #000;
+  color: #fff !important;
+  font-size: 12px;
+  padding: 2px 11px;
+  margin: 0 0 0 10px;
+  line-height: 0;
+  text-transform: uppercase;
+}
+
+#footer .content-01 .right .right-l p span {
+  font-weight: bold;
+  padding: 0 10px 0 0;
+}
+
+#footer .content-01 .right .right-r ul li {
+  display: inline-block;
+  margin: 0 1rem 1rem 0;
+  font-size: .9rem
+}
+
+@media(max-width:1025px) {
+  /*--スマホよこ--*/
+  #footer .content-01 .right,#footer .content-01 .right .right-l, #footer .content-01 .right .right-r {
+    width: 100%
+  }
+  #footer .content-01 .right {
+    padding: 2rem;
+  }
+
+}
+
+@media(max-width:480px) {
+  /*--スマホたて--*/
+}
+
+/*------ content-02 ------*/
+#footer .content-02 {
+  background: #000;
+}
+
+#footer .content-02 ul {
+  margin: 0
+}
+
+#footer .content-02 ul li {
+  display: inline-block;
+}
+
+#footer .content-02 ul li a {
+  padding: 1rem 2rem 1rem 0;
+  color: #fff !important;
+  font-size: 12px
+}
+
+@media(max-width:1025px) {
+  /*--スマホよこ--*/
+  #footer .content-02 ul li {
+    display: block;
+  }
+}
+
+@media(max-width:480px) {
+  /*--スマホたて--*/
+}
+
+
+/*------ SNSボタン ------*/
+#footer .sns ul {
+  position: absolute;
+  bottom: 0;
+  right: 5rem;
+  display: flex;
+}
+
+#footer .sns ul li {
+  width: 60px;
+  margin: 0 1rem 0 0
+}
+
+#footer .sns ul li a {
+  width: 100%;
+  display: block;
+}
+
+#footer .sns ul li a img {
+  width: 100%;
 }

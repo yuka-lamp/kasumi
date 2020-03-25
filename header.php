@@ -87,19 +87,19 @@ $slug = $post_obj->post_name;
 
 <main>
 <!-- メインコンテンツ -->
-<header>
+<header id="header">
     <!-- スマホヘッダー -->
     <div class="fat-nav sp-only">
       <div class="fat-nav__wrapper">
         <nav id="sp-header" class="gnav">
           <div class="gnav__wrap">
             <ul class="gnav__menu">
-              <li><a href="<?php echo $home ?>/consept">consept<span>コンセプト</span></a></li>
-              <li><a href="<?php echo $home ?>/plan">plan<span>プラン</span></a></li>
-              <li><a href="<?php echo $home ?>/flow">flow<span>体験の流れ</span></a></li>
-              <li><a href="<?php echo $home ?>/gallery">gallery<span>フォトギャラリー</span></a></li>
-              <li><a href="<?php echo $home ?>/faq">faq<span>よくあるご質問</span></a></li>
-              <li><a href="<?php echo $home ?>/blog">blog<span>ブログ</span></a></li>
+              <li><a class="serif" href="<?php echo $home ?>/consept"><span class="eng">consept</span>コンセプト</a></li>
+              <li><a class="serif" href="<?php echo $home ?>/plan"><span class="eng">plan</span>プラン</a></li>
+              <li><a class="serif" href="<?php echo $home ?>/flow"><span class="eng">flow</span>体験の流れ</a></li>
+              <li><a class="serif" href="<?php echo $home ?>/gallery"><span class="eng">gallery</span>フォトギャラリー</a></li>
+              <li><a class="serif" href="<?php echo $home ?>/faq"><span class="eng">faq</span>よくあるご質問</a></li>
+              <li><a class="serif" href="<?php echo $home ?>/blog"><span class="eng">blog</span>ブログ</a></li>
             </ul>
           </div>
         </nav>
@@ -110,12 +110,12 @@ $slug = $post_obj->post_name;
     <nav id="pc-header" class="pc-only">
       <div class="content wrap">
         <ul class="flex">
-          <li><a href="<?php echo $home ?>/consept">consept<span>コンセプト</span></a></li>
-          <li><a href="<?php echo $home ?>/plan">plan<span>プラン</span></a></li>
-          <li><a href="<?php echo $home ?>/flow">flow<span>体験の流れ</span></a></li>
-          <li><a href="<?php echo $home ?>/gallery">gallery<span>フォトギャラリー</span></a></li>
-          <li><a href="<?php echo $home ?>/faq">faq<span>よくあるご質問</span></a></li>
-          <li><a href="<?php echo $home ?>/blog">blog<span>ブログ</span></a></li>
+          <li><a class="serif" href="<?php echo $home ?>/consept"><span class="eng">consept</span>コンセプト</a></li>
+          <li><a class="serif" href="<?php echo $home ?>/plan"><span class="eng">plan</span>プラン</a></li>
+          <li><a class="serif" href="<?php echo $home ?>/flow"><span class="eng">flow</span>体験の流れ</a></li>
+          <li><a class="serif" href="<?php echo $home ?>/gallery"><span class="eng">gallery</span>フォトギャラリー</a></li>
+          <li><a class="serif" href="<?php echo $home ?>/faq"><span class="eng">faq</span>よくあるご質問</a></li>
+          <li><a class="serif" href="<?php echo $home ?>/blog"><span class="eng">blog</span>ブログ</a></li>
         </ul>
       </div>
     </nav>

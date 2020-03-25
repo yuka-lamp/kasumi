@@ -1,6 +1,57 @@
 /*--------------------------------------
 ヘッダー
 --------------------------------------*/
+#header {}
+
+#header nav ul li {
+  text-align: center;
+}
+
+#header nav ul li a {
+  color: #BABABA !important;
+  font-size: .8rem;
+  padding: 23px 0
+}
+
+#header nav ul li a span {
+  display: block;
+  color: #C8963E;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+/*--------------------------------------
+PCヘッダー
+--------------------------------------*/
+#header nav.pc-only {
+  background: #000
+}
+
+#header nav.pc-only ul {
+  border-bottom: 3px solid #C8963E;
+}
+
+#header nav.pc-only ul li {
+  border-left: 1px solid #383838;
+  width: 16.666%;
+  transition: all .5s;
+}
+
+#header nav.pc-only ul li:hover {
+  background: #1C1C1C
+}
+
+#header nav.pc-only ul li:last-child {
+  border-right: 1px solid #383838;
+}
+
+/*--------------------------------------
+SPヘッダー
+--------------------------------------*/
+#header nav.sp-only {}
+
+#header nav.sp-only ul li {}
 
 @media(max-width:1025px) {
   /*--スマホよこ--*/
@@ -8,4 +59,42 @@
 
 @media(max-width:480px) {
   /*--スマホたて--*/
+}
+
+/*--------------------------------------
+固定ボタン
+--------------------------------------*/
+.fix-btn {
+  width: 60px;
+  position: fixed;
+  top: 40%;
+  right: 0;
+  transition: all .5s;
+  z-index: 98
+}
+
+.fix-btn:hover {
+  opacity: .5
+}
+
+.fix-btn img a {
+  display: block;
+}
+
+.fix-btn img {
+  width: 100%
+}
+
+/*--------------------------------------
+背景
+--------------------------------------*/
+main::after {
+  content: '';
+  background: #F7F3EF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 25%;
+  z-index: -1
 }
