@@ -1,8 +1,81 @@
+body {
+  font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+  font-size: 100%;
+  letter-spacing: .1rem;
+  position: relative;
+  color: #000 !important
+}
+
+main {
+  overflow: hidden;
+}
+
+p {
+  font-size: 14px;
+  letter-spacing: .1rem;
+  line-height: 2.1
+}
+
+h2, h3 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 22px !important;
+  font-weight: bold !important;
+  line-height: 2.4rem !important
+}
+
+h3 {
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+@media(min-width:1025px) {
+  h2 {
+    font-size: 28px !important;
+    font-weight: bold !important;
+    line-height: 2.4rem !important
+  }
+
+  h3 {
+    font-size: 22px !important;
+    font-weight: bold !important;
+  }
+}
+
+a {
+  cursor: pointer !important;
+  color: #000 !important
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+li>a {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 0
+}
+
+.img-wrap, .img-wrap img {
+  width: 100%;
+}
+
 /*--------------------------------------レイアウト*/
 .wrap {
   box-sizing: border-box;
   margin: 0 auto;
   width: 1000px
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 .pc-flex {
@@ -12,6 +85,14 @@
 
 .sp-flex {
   display: block;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-top {
+  align-items: flex-start;
 }
 
 .sec {
@@ -45,14 +126,17 @@
 }
 
 @media(max-width:480px) {
+
   /*--スマホたて--*/
   .pc-flex {
     display: block;
   }
+
   .sp-flex {
     display: flex;
     justify-content: space-between;
   }
+
   .pc-only {
     display: none !important
   }
@@ -266,4 +350,13 @@
 
 .ml-05 {
   margin-left: .5rem
+}
+
+/*--------------------------------------font*/
+.eng {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.serif {
+  font-family: 'Noto Serif JP', serif;
 }
