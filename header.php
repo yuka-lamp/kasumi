@@ -42,7 +42,9 @@ $slug = $post_obj->post_name;
   <div class="left">
     <div class="content">
       <div class="img-wrap">
+        <a href="<?php echo $wp_url ?>">
         <img class="logo" src="<?php echo $wp_url ?>/lib/images/common/logo_01.png" alt="<?php bloginfo( 'name' ); ?>">
+        </a>
       </div>
       <div class="copy">
         <p class="serif">キ<br>ャ<br>ッ<br>チ<br>コ<br>ピ<br>ー<br>が<br>入<br>り<br>ま<br>す<br>。</p>
@@ -63,15 +65,19 @@ $slug = $post_obj->post_name;
 <?php else: ?>
 
 <!-- 下層ページメインビジュアル -->
-<section id="submv">
-    <div class="">
-      <p><?php echo $slug; ?></p>
-      <h2 class=""><?php echo get_the_title(); ?></h2>
+<section id="submv" class="<?php echo $slug; ?>">
+    <div class="bg flex align-center">
+      <div class="content">
+        <p class="eng"><?php echo $slug; ?></p>
+        <h2 class="serif"><?php echo get_the_title(); ?></h2>
+      </div>
     </div>
     <div class="img-wrap">
+      <a href="<?php echo $wp_url ?>">
       <img class="logo" src="<?php echo $wp_url ?>/lib/images/common/logo_02.png" alt="<?php bloginfo( 'name' ); ?>">
+      </a>
     </div>
-    <div class="img-wrap">
+    <div class="tel img-wrap">
       <a href="tel:000-0000-0000"><img src="<?php echo $wp_url ?>/lib/images/common/tel_02.png" alt="甲冑体験かすみの電話番号"></a>
     </div>
 </section>
@@ -83,7 +89,7 @@ $slug = $post_obj->post_name;
 <!-- メインコンテンツ -->
 <header>
     <!-- スマホヘッダー -->
-    <div class="fat-nav">
+    <div class="fat-nav sp-only">
       <div class="fat-nav__wrapper">
         <nav id="sp-header" class="gnav">
           <div class="gnav__wrap">
@@ -101,9 +107,9 @@ $slug = $post_obj->post_name;
     </div>
     <!-- スマホヘッダー終了 -->
     <!-- PCヘッダー -->
-    <nav id="pc-header" class="flex pc-only">
-      <div class="content">
-        <ul>
+    <nav id="pc-header" class="pc-only">
+      <div class="content wrap">
+        <ul class="flex">
           <li><a href="<?php echo $home ?>/consept">consept<span>コンセプト</span></a></li>
           <li><a href="<?php echo $home ?>/plan">plan<span>プラン</span></a></li>
           <li><a href="<?php echo $home ?>/flow">flow<span>体験の流れ</span></a></li>
