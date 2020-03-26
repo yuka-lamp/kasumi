@@ -4,6 +4,58 @@ $wp_url = get_template_directory_uri(); ?>
 </main>
 <!-- メインコンテンツ終了 -->
 
+<!-- お問い合わせ -->
+<section id="contact">
+  <div class="bg-img">
+    <div class="wrap">
+      <div class="sec">
+        <h2 class="eng upper">contact</h2>
+        <p>ご予約・お問い合わせはこちらから</p>
+        <div class="content">
+          <div class="btn-wrap">
+            <a  class="flex align-center"href="#"> <img src="<?php echo $wp_url ?>/lib/images/common/tel_03.png" alt="甲冑体験かすみの電話番号">
+            </a>
+          </div>
+          <div class="pc-flex">
+            <div class="btn-wrap">
+              <a class="flex align-center" href="#">空き情報を確認する</a>
+            </div>
+            <div class="btn-wrap">
+              <a class="flex align-center" href="#">お問い合わせ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- お問い合わせ終了 -->
+
+<!-- 花魁紹介 -->
+<section id="oiran">
+  <div class="bg-img">
+    <div class="wrap">
+      <div class="sec">
+        <h2 class="eng upper">OIRAN Experience </h2>
+        <p>プロのカメラ撮影 & 自由に写メ撮り放題の花魁体験！<br>本格的な花魁「あられ」1つ上の花魁体験「雅」の2店舗</p>
+        <ul class="flex">
+          <li>
+            <a href="https://www.oiran-arare.com/" target="_blank">
+            <div><p><span class="serif">本格体験を低価格で</span>花魁体験studioあられ</p></div>
+          </a>
+          </li>
+            <li>
+              <a href="https://oiran-miyabi.com" target="_blank">
+              <div><p><span class="serif">絢爛豪華な京都一の花魁</span>花魁体験studio雅</p></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 花魁紹介終了 -->
+
 <!-- フッター -->
 <footer id="footer">
   <div class="content-01 flex">
@@ -59,7 +111,6 @@ $wp_url = get_template_directory_uri(); ?>
 <!-- js -->
 <script src="<?php echo $wp_url ?>/lib/js/jquery.min.js"></script>
 <script src="<?php echo $wp_url; ?>/lib/js/jquery.fatNav.min.js"></script>
-<script src="<?php echo $wp_url ?>/lib/js/jquery.bgswitcher.js"></script>
 <script src="<?php echo $wp_url ?>/lib/js/slick.min.js"></script>
 <script src="<?php echo $wp_url ?>/lib/js/vegas.min.js"></script>
 <script src="<?php echo $wp_url ?>/lib/js/app.js"></script>

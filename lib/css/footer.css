@@ -1,4 +1,183 @@
 /*--------------------------------------
+お問い合わせ
+--------------------------------------*/
+#contact {
+  background: #fff
+}
+
+#contact .bg-img {
+  background: url('../images/common/bg_contact.png');
+  background-size: cover;
+  text-align: center;
+}
+
+#contact .content {
+  background: #8C0B18;
+  width: 80%;
+  margin: 0 auto
+}
+
+#contact .content .btn-wrap {
+  position: relative;
+}
+
+#contact .content .btn-wrap::after {
+  content: '';
+  width: 23px;
+  height: 16px;
+  background: url('../images/common/arrow.png');
+  background-size: cover;
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 2rem
+}
+
+/*-- 1段目 --*/
+#contact .content>.btn-wrap {
+  border-bottom: 2px solid #fff;
+}
+
+#contact .content>.btn-wrap a {
+  display: block;
+  padding: 2rem 0;
+  box-sizing: border-box;
+}
+
+#contact .content>.btn-wrap a img {
+  width: 357px;
+  display: block;
+  margin: 0 auto;
+}
+
+/*-- 2段目 --*/
+#contact .content .pc-flex .btn-wrap {
+  width: 50%;
+}
+
+#contact .content .pc-flex .btn-wrap a {
+  padding: 1rem 2rem;
+  color: #fff !important;
+  text-align: center;
+  display: block;
+}
+
+#contact .content .pc-flex .btn-wrap:nth-child(1) {
+  border-right: 2px solid #fff;
+  border-bottom: none
+}
+
+@media screen and (max-width: 768px) {
+
+  /*--スマホよこ--*/
+  #contact .content {
+    width: 100%
+  }
+
+  #contact .content>.btn-wrap a img {
+    width: 290px;
+  }
+
+  #contact .content .btn-wrap::after {
+    width: 19px;
+    height: 13px;
+    right: 1rem
+  }
+
+  #contact .content .pc-flex .btn-wrap:nth-child(1) {
+    border-right: none;
+    border-bottom: 2px solid #fff;
+  }
+
+  #contact .content .pc-flex .btn-wrap {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------
+花魁紹介
+--------------------------------------*/
+#oiran {
+  background: #fff
+}
+
+#oiran .bg-img {
+  background: url('../images/common/bg_washi.png');
+  background-size: cover;
+  text-align: center;
+}
+
+#oiran h2 {
+  color: #C8963E
+}
+
+#oiran ul {
+  width: 90%;
+  margin: 2rem auto 0 auto
+}
+
+#oiran ul li {
+  width: 49%;
+  height: 180px;
+}
+
+#oiran ul li:nth-child(1) {
+  background: url('../images/common/arare.png');
+  background-size: cover;
+}
+
+#oiran ul li:nth-child(2) {
+  background: url('../images/common/miyabi.png');
+  background-size: cover;
+}
+
+#oiran ul li:hover {
+  opacity: .5;
+  transition: .5s
+}
+
+#oiran ul li a {
+  height: 100%;
+  width: 100%;
+}
+
+#oiran ul li a div {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: flex-end;
+  color: #fff !important;
+  padding: 0 0 1rem 1rem;
+}
+
+#oiran ul li a div p {
+  text-align: left;
+  font-weight: normal;
+  margin: 0
+}
+
+#oiran ul li a div p span {
+  font-size: 1.2rem;
+  display:block;
+  margin-bottom: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  #oiran p {
+    text-align: left;
+  }
+
+  #oiran ul {
+    width: 100%;
+  }
+
+  #oiran ul li {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 1rem
+  }
+}
+
+/*--------------------------------------
 フッター
 --------------------------------------*/
 #footer {
@@ -6,15 +185,12 @@
   position: relative;
 }
 
-@media(max-width:1025px) {
+@media screen and (max-width: 768px) {
+
   /*--スマホよこ--*/
   #footer .flex {
     display: block;
   }
-}
-
-@media(max-width:480px) {
-  /*--スマホたて--*/
 }
 
 /*------ content-01 ------*/
@@ -36,15 +212,13 @@
   margin: 0 auto;
 }
 
-@media(max-width:1025px) {
+@media screen and (max-width: 768px) {
+
   /*--スマホよこ--*/
   #footer .content-01 .left {
-    width: 100%
+    width: 100%;
+    padding: 2rem
   }
-}
-
-@media(max-width:480px) {
-  /*--スマホたて--*/
 }
 
 #footer .content-01 .left a img {
@@ -68,7 +242,7 @@
 
 #footer .content-01 .right .right-l p {
   font-size: .9rem;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
   line-height: 1.2
 }
 
@@ -93,19 +267,24 @@
   font-size: .9rem
 }
 
-@media(max-width:1025px) {
+@media screen and (max-width: 768px) {
+
   /*--スマホよこ--*/
-  #footer .content-01 .right,#footer .content-01 .right .right-l, #footer .content-01 .right .right-r {
+  #footer .content-01 .right, #footer .content-01 .right .right-l, #footer .content-01 .right .right-r {
     width: 100%
   }
+
   #footer .content-01 .right {
     padding: 2rem;
   }
 
-}
+  #footer .content-01 .right .right-r ul {
+    margin: 1rem 0 0 0
+  }
 
-@media(max-width:480px) {
-  /*--スマホたて--*/
+  #footer .content-01 .right .right-r ul li {
+    margin: 0 1rem .5rem 0;
+  }
 }
 
 /*------ content-02 ------*/
@@ -127,17 +306,13 @@
   font-size: 12px
 }
 
-@media(max-width:1025px) {
+@media screen and (max-width: 768px) {
+
   /*--スマホよこ--*/
-  #footer .content-02 ul li {
-    display: block;
+  #footer .content-02 ul li a {
+    padding: 10px 5px 5px 0;
   }
 }
-
-@media(max-width:480px) {
-  /*--スマホたて--*/
-}
-
 
 /*------ SNSボタン ------*/
 #footer .sns ul {
@@ -159,4 +334,13 @@
 
 #footer .sns ul li a img {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+  /*--スマホよこ--*/
+  #footer .sns ul {
+    bottom: 2rem;
+    right: 0;
+  }
 }

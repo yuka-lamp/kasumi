@@ -1,13 +1,21 @@
 /*--------------------------------------
 メインビジュアル
 --------------------------------------*/
+#mv .bg-slider {
+  position: relative;
+  width: 100vw;
+  height: 627px;
+}
 #mv .left {
   width: 16%;
   text-align: center;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   margin: 0;
   padding: 0;
-  z-index: 99
+  z-index: 99;
+  background: #fff
 }
 
 #mv .left::after {
@@ -37,6 +45,10 @@
   display: inline-block;
 }
 
+#mv .left .content .tel-btn {
+  margin-top: 1rem
+}
+
 #mv .left .content .tel-btn, #mv .left .tel-btn img {
   width: 100%
 }
@@ -51,8 +63,9 @@
   display: block;
 }
 
-#mv .left .booking-btn {
-  background: #5D0710
+#mv .left .booking-btn:hover {
+  background: #5D0710;
+  transform: .5s
 }
 
 #mv .left .booking-btn a {
@@ -66,6 +79,9 @@
 
 @media(max-width:1025px) {
   /*--スマホよこ--*/
+  #mv .left {
+    display: none;
+  }
 }
 
 @media(max-width:480px) {

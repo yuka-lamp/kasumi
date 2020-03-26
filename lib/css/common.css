@@ -13,7 +13,7 @@ main {
 p {
   font-size: 14px;
   letter-spacing: .1rem;
-  line-height: 2.1
+  line-height: 1.5
 }
 
 h2, h3 {
@@ -31,7 +31,7 @@ h3 {
   font-weight: bold !important;
 }
 
-@media(min-width:1025px) {
+@media(min-width:896px) {
   h2 {
     font-size: 28px !important;
     font-weight: bold !important;
@@ -102,11 +102,11 @@ ul {
 }
 
 .pc-only {
-  display: block !important
+  display: block
 }
 
 .sp-only {
-  display: none !important
+  display: none
 }
 
 .txt-l {
@@ -121,12 +121,9 @@ ul {
   text-align: center
 }
 
-@media(max-width:1025px) {
+@media screen and (max-width: 768px) {
+
   /*--スマホよこ--*/
-}
-
-@media(max-width:480px) {
-
   /*--スマホたて--*/
   .pc-flex {
     display: block;
@@ -138,13 +135,28 @@ ul {
   }
 
   .pc-only {
-    display: none !important
+    display: none
   }
 
   .sp-only {
-    display: block !important
+    display: block
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .sec {
+    padding: 50px 0 !important
+  }
+
+  .wrap {
+    width: 100%;
+    padding: 0 15px !important
   }
 }
+
+@media(max-width:480px) {}
 
 /*--------------------------------------文字装飾*/
 .b {
@@ -359,4 +371,8 @@ ul {
 
 .serif {
   font-family: 'Noto Serif JP', serif;
+}
+
+.upper {
+  text-transform: uppercase;
 }

@@ -38,7 +38,8 @@ $slug = $post_obj->post_name;
 <?php if (is_home() || is_front_page()): ?>
 
 <!-- トップページメインビジュアル -->
-<section id="mv" class="flex">
+<section id="mv">
+  <div class="bg-slider"></div>
   <div class="left">
     <div class="content">
       <div class="img-wrap">
@@ -58,7 +59,6 @@ $slug = $post_obj->post_name;
       <a class="serif" href="#">空き状況を確認する</a>
     </div>
   </div>
-  <div class="bg-slider"></div>
 </section>
 <!-- トップページメインビジュアル終了 -->
 
@@ -89,9 +89,10 @@ $slug = $post_obj->post_name;
 <!-- メインコンテンツ -->
 <header id="header">
     <!-- スマホヘッダー -->
-    <div class="fat-nav sp-only">
+    <div id="sp-header">
+      <div class="fat-nav">
       <div class="fat-nav__wrapper">
-        <nav id="sp-header" class="gnav">
+        <nav class="gnav">
           <div class="gnav__wrap">
             <ul class="gnav__menu">
               <li><a class="serif" href="<?php echo $home ?>/consept"><span class="eng">consept</span>コンセプト</a></li>
@@ -103,6 +104,7 @@ $slug = $post_obj->post_name;
             </ul>
           </div>
         </nav>
+      </div>
       </div>
     </div>
     <!-- スマホヘッダー終了 -->
