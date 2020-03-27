@@ -17,6 +17,7 @@ $wp_url = get_template_directory_uri(); ?>
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/footer.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/mv.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/sub-mv.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/sub-about.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/top.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/concept.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/plan.css">
@@ -52,12 +53,38 @@ $slug = $post_obj->post_name;
         <p class="serif">キ<br>ャ<br>ッ<br>チ<br>コ<br>ピ<br>ー<br>が<br>入<br>り<br>ま<br>す<br>。</p>
       </div>
       <div class="tel-btn">
-        <a href="tel:000-0000-0000"><img src="<?php echo $wp_url ?>/lib/images/common/tel_01.png" alt="甲冑体験かすみの電話番号"></a>
+        <a href="tel:000-0000-0000"><img src="<?php echo $wp_url ?>/lib/images/common/tel_01.png" alt="甲冑体験studioかすみの電話番号"></a>
       </div>
     </div>
     <div class="booking-btn">
       <a class="serif" href="#">空き状況を確認する</a>
     </div>
+  </div>
+  <div class="top-news flex">
+    <ul class="news-slider">
+    <?php
+    $args = array(
+      'posts_per_page' => 3,
+    );
+    $posts = get_posts($args);
+    foreach ($posts as $post):
+    setup_postdata($post); ?>
+    <li class="flex">
+      <a href="<?php the_permalink(); ?>">
+      <time datetime="<?php the_time('Y-m-d'); ?>"><?php the_time('Y.m.d'); ?></time><p><?php
+      if(mb_strlen(get_the_title(), 'UTF-8')>11){
+        $title= mb_substr(get_the_title(), 0, 11, 'UTF-8');
+        echo $title.'…';
+      }else{
+        echo get_the_title();
+      }
+      ?>
+      </a>
+    </li>
+    <?php
+    endforeach;
+    wp_reset_postdata(); ?>
+    </ul>
   </div>
 </section>
 <!-- トップページメインビジュアル終了 -->
@@ -78,7 +105,7 @@ $slug = $post_obj->post_name;
       </a>
     </div>
     <div class="tel img-wrap">
-      <a href="tel:000-0000-0000"><img src="<?php echo $wp_url ?>/lib/images/common/tel_02.png" alt="甲冑体験かすみの電話番号"></a>
+      <a href="tel:000-0000-0000"><img src="<?php echo $wp_url ?>/lib/images/common/tel_02.png" alt="甲冑体験studioかすみの電話番号"></a>
     </div>
 </section>
 <!-- 下層ページメインビジュアル終了 -->
@@ -109,7 +136,7 @@ $slug = $post_obj->post_name;
     </div>
     <!-- スマホヘッダー終了 -->
     <!-- PCヘッダー -->
-    <nav id="pc-header" class="pc-only">
+    <nav id="pc-header">
       <div class="content wrap">
         <ul class="flex">
           <li><a class="serif" href="<?php echo $home ?>/consept"><span class="eng">consept</span>コンセプト</a></li>

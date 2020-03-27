@@ -24,31 +24,42 @@
 /*--------------------------------------
 PCヘッダー
 --------------------------------------*/
-#header nav.pc-only {
+#header #pc-header {
   background: #000
 }
 
-#header nav.pc-only ul {
+#header #pc-header ul {
   border-bottom: 3px solid #C8963E;
 }
 
-#header nav.pc-only ul li {
+#header #pc-header ul li {
   border-left: 1px solid #383838;
   width: 16.666%;
   transition: all .5s;
 }
 
-#header nav.pc-only ul li:hover {
+#header #pc-header ul li:hover {
   background: #1C1C1C
 }
 
-#header nav.pc-only ul li:last-child {
+#header #pc-header ul li:last-child {
   border-right: 1px solid #383838;
+}
+
+@media screen and (max-width: 768px) {
+  #header #pc-header {
+    display: none;
+  }
 }
 
 /*--------------------------------------
 SPヘッダー
 --------------------------------------*/
+
+#header #sp-header nav ul li a {
+  padding: 8px 0!important
+}
+
 .hamburger__icon, .hamburger__icon:after, .hamburger__icon:before {
   background-color: #fff
 }
@@ -58,7 +69,7 @@ SPヘッダー
 }
 
 .hamburger.active .hamburger__icon:after, .hamburger.active .hamburger__icon:before {
-  background-color: #000
+  background-color: #fff
 }
 
 #sp-he.hamburger
@@ -85,25 +96,15 @@ ader {
   .hamburger {
     display: block;
   }
-}
-
-/*---ヘッダーバー---*/
-.header-wrap {
-  position: fixed;
-  top: 23px;
-  width: 100%;
-  padding: 0 15px;
-  box-sizing: border-box;
-}
-
-.header-wrap .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
+  #header #sp-header {
+    display: block;
+  }
 }
 
 /*---メニュー内---*/
+.fat-nav {
+  background: rgba(0,0,0,.8);
+}
 .fat-nav.active, .fat-nav__wrapper {
   position: fixed;
   top: 0;

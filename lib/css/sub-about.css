@@ -1,0 +1,49 @@
+/*--------------------------------------
+sub-about
+--------------------------------------*/
+#sub-about>.sec>div {
+  width: 49%;
+}
+
+#sub-about .txt-wrap h2 span {
+  background: #fff;
+  padding: 10px 20px
+}
+
+#sub-about .txt-wrap p {
+  background: #fff;
+  padding: 20px
+}
+
+#sub-about .txt-wrap h2 {
+  font-size: 32px !important
+}
+
+#sub-about .txt-wrap h2 span {
+  display: block;
+  margin-bottom: 1rem
+}
+
+@media(max-width:678px) {
+
+  /*--スマホよこ--*/
+  #sub-about>.sec>div {
+    width: 100%;
+  }
+
+  #sub-about .txt-wrap h2 span {
+    padding: 5px 10px
+  }
+
+  #sub-about .txt-wrap p {
+    padding: 10px
+  }
+
+  #sub-about .txt-wrap h2 {
+    font-size: 22px !important
+  }
+
+  #sub-about .txt-wrap h2 span {
+    margin-bottom: .5rem
+  }
+}

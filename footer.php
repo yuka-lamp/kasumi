@@ -1,8 +1,6 @@
 <?php
 $home = esc_url(home_url());
 $wp_url = get_template_directory_uri(); ?>
-</main>
-<!-- メインコンテンツ終了 -->
 
 <!-- お問い合わせ -->
 <section id="contact">
@@ -38,7 +36,7 @@ $wp_url = get_template_directory_uri(); ?>
       <div class="sec">
         <h2 class="eng upper">OIRAN Experience </h2>
         <p>プロのカメラ撮影 & 自由に写メ撮り放題の花魁体験！<br>本格的な花魁「あられ」1つ上の花魁体験「雅」の2店舗</p>
-        <ul class="flex">
+        <ul class="pc-flex">
           <li>
             <a href="https://www.oiran-arare.com/" target="_blank">
             <div><p><span class="serif">本格体験を低価格で</span>花魁体験studioあられ</p></div>
@@ -55,6 +53,9 @@ $wp_url = get_template_directory_uri(); ?>
   </div>
 </section>
 <!-- 花魁紹介終了 -->
+
+</main>
+<!-- メインコンテンツ終了 -->
 
 <!-- フッター -->
 <footer id="footer">

@@ -66,7 +66,7 @@
   border-bottom: none
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 678px) {
 
   /*--スマホよこ--*/
   #contact .content {
@@ -157,11 +157,11 @@
 
 #oiran ul li a div p span {
   font-size: 1.2rem;
-  display:block;
+  display: block;
   margin-bottom: 3px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 678px) {
   #oiran p {
     text-align: left;
   }
@@ -185,7 +185,7 @@
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 678px) {
 
   /*--スマホよこ--*/
   #footer .flex {
@@ -212,7 +212,7 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 678px) {
 
   /*--スマホよこ--*/
   #footer .content-01 .left {
@@ -267,7 +267,7 @@
   font-size: .9rem
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 678px) {
 
   /*--スマホよこ--*/
   #footer .content-01 .right, #footer .content-01 .right .right-l, #footer .content-01 .right .right-r {
@@ -284,6 +284,15 @@
 
   #footer .content-01 .right .right-r ul li {
     margin: 0 1rem .5rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #footer .content-01 .right>.flex .flex {
+    display: block;
+  }
+  #footer .content-01 .right>.flex .flex>div {
+    width: 100%;
   }
 }
 
@@ -306,7 +315,7 @@
   font-size: 12px
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 678px) {
 
   /*--スマホよこ--*/
   #footer .content-02 ul li a {
@@ -336,7 +345,7 @@
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 678px) {
 
   /*--スマホよこ--*/
   #footer .sns ul {

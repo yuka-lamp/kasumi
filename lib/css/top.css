@@ -1,11 +1,333 @@
 /*--------------------------------------
-ヘッダー
+about
 --------------------------------------*/
+#about .contet {
+  position: relative;
+}
 
-@media(max-width:1025px) {
+#about .img-wrap {
+  width: 80%;
+}
+
+#about .txt-wrap {
+  background: #fff;
+  padding: 2rem;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  width: 40%;
+}
+
+#about .txt-wrap h2 {
+  font-weight: normal;
+  margin-bottom: 2rem
+}
+
+#about .txt-wrap::after {
+  content: '';
+  width: 500px;
+  height: 223px;
+  background: url('../images/top/bg_red.png');
+  background-size: cover;
+  position: absolute;
+  right: -15rem;
+  bottom: -2rem;
+  z-index: -1
+}
+
+@media(max-width:678px) {
+
+  /*--スマホよこ--*/
+  #about .img-wrap {
+    width: 100%;
+  }
+
+  #about .txt-wrap {
+    position: relative;
+    padding: 1rem;
+    width: 90%;
+    margin: 0 auto
+  }
+}
+
+/*--------------------------------------
+plan
+--------------------------------------*/
+#plan .flex {
+  position: relative;
+  margin: 0 0 5rem 0
+}
+
+#plan .flex::after {
+  content: '';
+  width: 85px;
+  height: 85px;
+  background: url('../images/top/arrow_circle.png');
+  background-size: cover;
+  position: absolute;
+  right: -3rem;
+  bottom: 3rem;
+  z-index: 80;
+  transition: .5s
+}
+
+#plan .flex .img-wrap {
+  margin-bottom: 1rem
+}
+
+#plan .content:hover .flex::after {
+  right: -4rem;
+}
+
+#plan .txt-wrap {
+  width: 50%;
+  position: absolute;
+  right: 3rem;
+  bottom: 0
+}
+
+#plan .txt-wrap h2, #plan .txt-wrap p {
+  background: #fff;
+  padding: 10px 20px
+}
+
+#plan .txt-wrap h2 {
+  font-size: 36px !important;
+}
+
+#plan .txt-wrap h2 span {
+  color: #8C0B18;
+  font-size: 1rem;
+  margin: 0 0 0 3rem
+}
+
+#plan .txt-wrap .price {
+  font-size: 1rem
+}
+
+/*-- 2n枚目 --*/
+#plan .content:nth-child(2n) .flex {
+  flex-flow: row-reverse
+}
+
+#plan .content:nth-child(2n) .txt-wrap {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  right: auto;
+  bottom: 0
+}
+
+@media(max-width:678px) {
+
+  /*--スマホよこ--*/
+  #plan .flex {
+    margin: 0 0 3rem 0;
+    flex-flow: column;
+  }
+
+  #plan .txt-wrap {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 1rem
+  }
+
+  /*-- 2n枚目 --*/
+  #plan .content:nth-child(2n) .flex {
+    flex-flow: column;
+  }
+
+  #plan .content:nth-child(2n) .txt-wrap {
+    width: 100%;
+    position: relative;
+  }
+}
+
+/*--------------------------------------
+gallery
+--------------------------------------*/
+#gallery {
+  background: url('../images/top/bg_gallery.png');
+  background-size: cover;
+  position: relative;
+}
+
+#gallery a::after {
+  content: '';
+  background: url('../images/top/btn_gallery.png');
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: calc(50% - 125px);
+  left: calc(50% - 125px);
+}
+
+@media(max-width:678px) {
   /*--スマホよこ--*/
 }
 
-@media(max-width:480px) {
-  /*--スマホたて--*/
+/*--------------------------------------
+flow
+--------------------------------------*/
+#flow .img-wrap {
+  width: 80%;
+}
+
+#flow .txt-wrap {
+  background: #fff;
+  padding: 2rem;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  width: 40%;
+}
+
+#flow h3 {
+  margin: 1rem 0
+}
+
+#flow .txt-wrap ul li {
+  margin-bottom: .5rem
+}
+
+#flow .txt-wrap ul li .img-wrap {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin: 0 10px 0 0
+}
+
+#flow .txt-wrap ul li p {
+  display: inline-block;
+}
+
+@media(max-width:678px) {
+
+  /*--スマホよこ--*/
+  #flow .img-wrap {
+    width: 100%;
+  }
+
+  #flow .txt-wrap {
+    position: relative;
+    padding: 1rem;
+    width: 90%;
+    margin: 0 auto
+  }
+}
+
+/*--------------------------------------
+blog
+--------------------------------------*/
+#blog h2, #blog p {
+  text-align: center;
+}
+
+#blog ul li {
+  width: 30%
+}
+
+#blog ul li .img-wrap {
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+#blog ul li .img-wrap img {
+  width: 100%;
+}
+
+#blog ul li p {
+  text-align: left;
+}
+
+#blog ul li p.serif {
+  font-size: 1.2rem;
+  margin: 10px 0 5px 0
+}
+
+#blog ul li p.eng {
+  color: #909090
+}
+
+@media(max-width:678px) {
+
+  /*--スマホよこ--*/
+  #blog ul li {
+    width: 100%
+  }
+}
+
+/*--------------------------------------
+access
+--------------------------------------*/
+#access .mapwrap .map {
+  width: 75%;
+  height: 438px
+}
+
+#access .mapwrap .content {
+  width: 25%;
+  background: #000;
+  display: flex;
+  align-items: center;
+}
+
+#access .mapwrap .txt-wrap {
+  padding: 2rem
+}
+
+#access .mapwrap .txt-wrap h3, #access .mapwrap .txt-wrap p {
+  color: #fff!important;
+}
+
+@media(max-width:678px) {
+  /*--スマホよこ--*/
+  #access .mapwrap .map {
+    width: 100%;
+    height: 300px
+  }
+
+  #access .mapwrap .content {
+    width: 100%;
+  }
+}
+
+#access .train {
+  margin: 2rem 0 0 0
+}
+
+#access .train li {
+  width: 32%;
+  border: 1px solid #C8963E;
+  margin: 5px;
+  text-align: center;
+  background: #fff
+}
+
+#access .train li .border-g {
+  margin: 5px;
+  padding: 2rem;
+  border: 1px solid #C8963E
+}
+
+#access .train li h3 {
+  font-size: 1rem!important
+}
+
+#access .train li p {
+  margin: 1rem 0 0 0!important;
+  padding: 0
+}
+
+
+@media(max-width:678px) {
+  /*--スマホよこ--*/
+  #access .train li {
+    width: 100%;
+    margin-bottom: 1rem
+  }
 }

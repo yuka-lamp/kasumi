@@ -31,7 +31,7 @@ h3 {
   font-weight: bold !important;
 }
 
-@media(min-width:896px) {
+@media(max-width:678px) {
   h2 {
     font-size: 28px !important;
     font-weight: bold !important;
@@ -64,6 +64,38 @@ ul {
 
 .img-wrap, .img-wrap img {
   width: 100%;
+}
+
+.btn01 {
+  text-align: center;
+  display: inline-block;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.btn01 a {
+  padding: 1rem 3rem;
+  color: #fff !important;
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  background: #000;
+  width: 300px;
+  margin: 0 auto;
+  transition: .5s
+}
+
+.btn01:hover a {
+  background: #333;
+}
+
+.btn01 a::after {
+  content: '+';
+  font-size: 25px;
+  color: #fff !important;
+  position: absolute;
+  right: 1rem;
+  top: calc(50% - 17px);
 }
 
 /*--------------------------------------レイアウト*/
@@ -121,7 +153,14 @@ ul {
   text-align: center
 }
 
-@media screen and (max-width: 768px) {
+@media(max-width:1000px) {
+  .wrap {
+    width: 100%;
+    padding: 0 15px !important
+  }
+}
+
+@media(max-width:678px) {
 
   /*--スマホよこ--*/
   /*--スマホたて--*/
@@ -142,17 +181,8 @@ ul {
     display: block
   }
 
-  .flex {
-    flex-wrap: wrap;
-  }
-
   .sec {
     padding: 50px 0 !important
-  }
-
-  .wrap {
-    width: 100%;
-    padding: 0 15px !important
   }
 }
 
@@ -375,4 +405,8 @@ ul {
 
 .upper {
   text-transform: uppercase;
+}
+
+.gold {
+  color: #C8963E
 }

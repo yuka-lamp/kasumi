@@ -1,11 +1,73 @@
 /*--------------------------------------
-ヘッダー
+下層ページメインビジュアル
 --------------------------------------*/
+#submv {}
 
-@media(max-width:1025px) {
-  /*--スマホよこ--*/
+#submv .bg {
+  height: 300px;
+  position: relative;
 }
 
-@media(max-width:480px) {
-  /*--スマホたて--*/
+#submv .content {
+  width: 100%;
+  filter: drop-shadow(0 0 0 1rem #333);
+}
+
+#submv .content p {
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0;
+  line-height: 1;
+}
+
+#submv .content h2 {
+  text-align: center;
+  font-size: 1.2rem!important;
+  color: #fff;
+  width: 100%;
+  display: block;
+  margin: 0
+}
+
+#submv .logo {
+  width: 128px;
+  height: 128px;
+  position: absolute;
+  top: 1rem;
+  left: 2rem
+}
+
+#submv .logo a {
+  display: block;
+}
+
+#submv .tel {
+  width: 190px;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+#submv .tel a {
+  display: block;
+}
+
+/*-- 各ページ背景画像 --*/
+#submv.concept .bg {
+  background: url('../images/submv/concept.png');
+  background-size: cover;
+}
+
+#submv.plan .bg {
+  background: url('../images/submv/plan.png');
+  background-size: cover;
+}
+
+#submv.flow .bg {
+  background: url('../images/submv/flow.png');
+  background-size: cover;
 }

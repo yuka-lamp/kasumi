@@ -89,75 +89,54 @@
 }
 
 /*--------------------------------------
-下層ページメインビジュアル
+お知らせバー
 --------------------------------------*/
-#submv {}
-
-#submv .bg {
-  height: 300px;
+#mv {
   position: relative;
 }
 
-#submv .content {
-  width: 100%;
-  filter: drop-shadow(0 0 0 1rem #333);
+.top-news {
+  width: 500px;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: #fff;
 }
 
-#submv .content p {
-  text-align: center;
-  display: block;
-  font-size: 2rem;
-  color: #fff;
-  text-transform: uppercase;
-  width: 100%;
-  margin: 0;
+.top-news ul {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 0;
+  border: solid 1px #fff;
+  border-radius: 35px;
+}
+
+.top-news ul li {
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0 20px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.top-news ul li a {
+  display: inline-block;
+}
+
+.top-news ul li time, .top-news ul li p {
+  display: inline-block;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  padding: 5px 0;
+  font-size: 12px;
   line-height: 1;
-}
-
-#submv .content h2 {
-  text-align: center;
-  font-size: 1.2rem!important;
-  color: #fff;
-  width: 100%;
-  display: block;
   margin: 0
 }
 
-#submv .logo {
-  width: 128px;
-  height: 128px;
-  position: absolute;
-  top: 1rem;
-  left: 2rem
-}
-
-#submv .logo a {
-  display: block;
-}
-
-#submv .tel {
-  width: 190px;
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-}
-
-#submv .tel a {
-  display: block;
-}
-
-/*-- 各ページ背景画像 --*/
-#submv.concept .bg {
-  background: url('../images/submv/concept.png');
-  background-size: cover;
-}
-
-#submv.plan .bg {
-  background: url('../images/submv/plan.png');
-  background-size: cover;
-}
-
-#submv.flow .bg {
-  background: url('../images/submv/flow.png');
-  background-size: cover;
+.top-news ul li time {
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: solid 1px #fff;
 }
