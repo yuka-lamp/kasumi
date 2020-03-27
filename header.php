@@ -150,6 +150,6 @@ $slug = $post_obj->post_name;
     </nav>
     <!-- PCヘッダー終了 -->
     <div class="fix-btn">
-      <a href="#"><img src="<?php echo $wp_url ?>/lib/images/common/booking_btn.png" alt="空き情報を確認"></a>
+      <a href="http://kasumi.local/booking-calendar/"><img src="<?php echo $wp_url ?>/lib/images/common/booking_btn.png" alt="空き情報を確認"></a>
     </div>
 </header>

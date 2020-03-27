@@ -15,11 +15,13 @@ get_header(); ?>
   </div>
 </section>
 
-<section id="plan" class="wrap">
+<section id="plan-intro" class="wrap">
   <div class="sec">
-    <div class="name">
-      <h2 class="serif">プラン名</h2>
-      <p class="upper eng">planname</p>
+    <div class="name-border">
+      <div class="name">
+        <h2 class="serif">プラン名</h2>
+        <p class="upper eng gold">planname</p>
+      </div>
     </div>
     <div class="img-wrap pc-flex">
       <div class="img-wrap pc-only">
@@ -34,7 +36,82 @@ get_header(); ?>
         <h3 class="serif">プランタイトルが<br>入ります。</h3>
         <p class="serif upper">¥00,000</p>
       </div>
-      <p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+      <p class="right">サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
+    </div>
+    <div class="content">
+      <h3 class="gold serif">プランに含まれるもの</h3>
+      <ul class="flex">
+        <li>
+          <div class="img-wrap">
+            <img src="<?php echo $wp_url ?>/lib/images/plan/content_01.png" alt="甲冑体験studioかすみ[プラン名]画像">
+          </div>
+          <p class="serif">着付け</p>
+        </li>
+        <li>
+          <div class="img-wrap">
+            <img src="<?php echo $wp_url ?>/lib/images/plan/content_01.png" alt="甲冑体験studioかすみ[プラン名]画像">
+          </div>
+          <p class="serif">着付け</p>
+        </li>
+        <li>
+          <div class="img-wrap">
+            <img src="<?php echo $wp_url ?>/lib/images/plan/content_01.png" alt="甲冑体験studioかすみ[プラン名]画像">
+          </div>
+          <p class="serif">着付け</p>
+        </li>
+        <li>
+          <div class="img-wrap">
+            <img src="<?php echo $wp_url ?>/lib/images/plan/content_01.png" alt="甲冑体験studioかすみ[プラン名]画像">
+          </div>
+          <p class="serif">着付け</p>
+        </li>
+        <li>
+          <div class="img-wrap">
+            <img src="<?php echo $wp_url ?>/lib/images/plan/content_01.png" alt="甲冑体験studioかすみ[プラン名]画像">
+          </div>
+          <p class="serif">着付け</p>
+        </li>
+      </ul>
+    </div>
+    <div class="option">
+      <ul class="flex">
+        <li>
+          <div class="img-wrap">
+            <img src="<?php echo $wp_url ?>/lib/images/plan/content_01.png" alt="甲冑体験studioかすみオプション画像">
+          </div>
+          <div class="txt-wrap">
+            <p>オプション名</p>
+            <p class="eng">¥00,000</p>
+          </div>
+        </li>
+        <li>
+          <div class="img-wrap">
+            <img src="<?php echo $wp_url ?>/lib/images/plan/content_02.png" alt="甲冑体験studioかすみオプション画像">
+          </div>
+          <div class="txt-wrap">
+            <p>オプション名</p>
+            <p class="eng">¥00,000</p>
+          </div>
+        </li>
+        <li>
+          <div class="img-wrap">
+            <img src="<?php echo $wp_url ?>/lib/images/plan/content_03.png" alt="甲冑体験studioかすみオプション画像">
+          </div>
+          <div class="txt-wrap">
+            <p>オプション名</p>
+            <p class="eng">¥00,000</p>
+          </div>
+        </li>
+        <li>
+          <div class="img-wrap">
+            <img src="<?php echo $wp_url ?>/lib/images/plan/content_04.png" alt="甲冑体験studioかすみオプション画像">
+          </div>
+          <div class="txt-wrap">
+            <p>オプション名</p>
+            <p class="eng">¥00,000</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

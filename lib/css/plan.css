@@ -1,13 +1,162 @@
 /*--------------------------------------
-プラン
+プラン紹介
 --------------------------------------*/
+#plan-intro {}
 
-
-
-@media(max-width:678px) {
-  /*--スマホよこ--*/
+#plan-intro .name-border {
+  position: relative;
 }
 
-@media(max-width:480px) {
-  /*--スマホたて--*/
+#plan-intro .name {
+  background: #fff;
+  width: 300px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+
+#plan-intro .name h2, #plan-intro .ttl p {
+  display: inline-block;
+}
+
+#plan-intro .name h2 {
+  font-size: 1.8rem !important;
+}
+
+#plan-intro .name-border::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  background: #C8963E;
+  z-index: -1
+}
+
+#plan-intro .txt-wrap {}
+
+#plan-intro .txt-wrap .left {
+  width: 35%
+}
+
+#plan-intro .txt-wrap .left h3 {
+  font-size: 1.6rem !important;
+  line-height: 1.5 !important;
+}
+
+#plan-intro .txt-wrap .left p {
+  font-size: 1.3rem;
+}
+
+#plan-intro .txt-wrap .right {
+  width: 60%
+}
+
+@media(max-width:678px) {
+
+  /*--スマホよこ--*/
+  #plan-intro .txt-wrap .left, #plan-intro .txt-wrap .right {
+    width: 100%
+  }
+
+  #plan-intro .name {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------
+プランに含まれるもの
+--------------------------------------*/
+#plan-intro .content {
+  padding: 2rem;
+  border: 1px solid #C8963E;
+  margin: 3rem 0 1rem 0
+}
+
+#plan-intro .content ul {
+  margin: 0
+}
+
+#plan-intro .content ul li {
+  width: 19%;
+  text-align: center;
+}
+
+#plan-intro .content h3 {
+  background: #fff;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -45px;
+  text-align: center;
+}
+
+#plan-intro .content p {
+  margin: 1rem 0 0 0
+}
+
+@media(max-width:678px) {
+
+  /*--スマホよこ--*/
+  #plan-intro .content {
+    padding: 1rem;
+  }
+
+  #plan-intro .content ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #plan-intro .content ul li {
+    width: 31%;
+    margin: 0 2px
+  }
+
+  #plan-intro .content h3 {
+    top: -30px;
+  }
+}
+
+/*--------------------------------------
+オプション
+--------------------------------------*/
+#plan-intro .option::before {
+  content: '+';
+  display: block;
+  text-align: center;
+  font-size: 2rem
+}
+
+#plan-intro .option ul {
+  justify-content: center;
+  margin: 1rem 0 0 0
+}
+
+#plan-intro .option ul li {
+  text-align: center;
+  width: 20%;
+  margin: 0 .5rem;
+  background: #C8963E;
+}
+
+#plan-intro .option .txt-wrap {
+  margin: 1rem
+}
+
+#plan-intro .option ul li p {
+  color: #fff;
+  margin: 0
+}
+
+@media(max-width:678px) {
+
+  /*--スマホよこ--*/
+  #plan-intro .option ul {
+    flex-wrap: wrap;
+  }
+
+  #plan-intro .option ul li {
+    width: 44%;
+    margin: 0 5px 10px 5px
+  }
 }
