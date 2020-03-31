@@ -236,18 +236,42 @@
   font-size: 1.2rem
 }
 
-#footer .content-01 .right .right-l, #footer .content-01 .right .right-r {
+#footer .content-01 .right .right-c {
+  width: 38%;
+  margin: 0 1rem 0 0
+}
+
+#footer .content-01 .right .right-r {
   width: 50%;
+  margin: 0 1rem 0 0
+}
+
+#footer .content-01 .right .right-l {
+  background: #1dcd00;
+  width: 12%;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
 }
 
 #footer .content-01 .right .right-l p {
+  margin: 0;
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+#footer .content-01 .right .right-l .img-wrap {
+  padding: 5px;
+}
+
+#footer .content-01 .right .right-c p {
   font-size: .9rem;
   margin: 0 0 15px 0;
   line-height: 1.2
 }
 
-#footer .content-01 .right .right-l p a {
-  background: #000;
+#footer .content-01 .right .right-c p a {
+  background: #8C0B18;
   color: #fff !important;
   font-size: 12px;
   padding: 2px 11px;
@@ -256,7 +280,7 @@
   text-transform: uppercase;
 }
 
-#footer .content-01 .right .right-l p span {
+#footer .content-01 .right .right-c p span {
   font-weight: bold;
   padding: 0 10px 0 0;
 }
@@ -270,8 +294,9 @@
 @media screen and (max-width: 678px) {
 
   /*--スマホよこ--*/
-  #footer .content-01 .right, #footer .content-01 .right .right-l, #footer .content-01 .right .right-r {
-    width: 100%
+  #footer .content-01 .right, #footer .content-01 .right .right-c, #footer .content-01 .right .right-r {
+    width: 100%;
+    margin: 0
   }
 
   #footer .content-01 .right {
@@ -279,7 +304,7 @@
   }
 
   #footer .content-01 .right .right-r ul {
-    margin: 1rem 0 0 0
+    margin: 1rem 0
   }
 
   #footer .content-01 .right .right-r ul li {
@@ -291,6 +316,7 @@
   #footer .content-01 .right>.flex .flex {
     display: block;
   }
+
   #footer .content-01 .right>.flex .flex>div {
     width: 100%;
   }
@@ -318,6 +344,22 @@
 @media screen and (max-width: 678px) {
 
   /*--スマホよこ--*/
+  #footer .content-01 .right .right-l {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 3rem 0;
+    align-items: center;
+    padding: 1rem
+  }
+
+  #footer .content-01 .right .right-l p,#footer .content-01 .right .right-l img {
+    margin: 0 1rem;
+  }
+
+  #footer .content-01 .right .right-l p {
+    font-size: 1.2rem
+  }
+
   #footer .content-02 ul li a {
     padding: 10px 5px 5px 0;
   }
@@ -332,7 +374,7 @@
 }
 
 #footer .sns ul li {
-  width: 60px;
+  width: 50px;
   margin: 0 1rem 0 0
 }
 

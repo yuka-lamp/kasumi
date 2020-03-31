@@ -26,7 +26,7 @@
 
 #submv .content h2 {
   text-align: center;
-  font-size: 1.2rem!important;
+  font-size: 1.2rem !important;
   color: #fff;
   width: 100%;
   display: block;
@@ -70,4 +70,46 @@
 #submv.flow .bg {
   background: url('../images/submv/flow.png');
   background-size: cover;
+}
+
+#submv.gallery .bg {
+  background: url('../images/submv/gallery.png');
+  background-size: cover;
+}
+
+#submv.contact .bg {
+  background: url('../images/submv/contact.png');
+  background-size: cover;
+}
+
+#submv.faq .bg {
+  background: url('../images/submv/faq.png');
+  background-size: cover;
+}
+
+#submv.blog .bg {
+  background: url('../images/submv/blog.png');
+  background-size: cover;
+}
+
+#submv.booking .bg, #submv.booking-calendar .bg, #submv.booking-thanks .bg, #submv.booking-form .bg {
+  background: url('../images/submv/booking.png');
+  background-size: cover;
+}
+
+#submv.privacypolicy .bg, #submv.sitemap .bg {
+  background: url('../images/submv/ather.png');
+  background-size: cover;
+}
+
+@media(max-width:678px) {
+  #submv .logo {
+    width: 98px;
+    height: 98px;
+    top: 1rem;
+    left: 1rem
+  }
+  #submv .tel {
+    display: none;
+  }
 }

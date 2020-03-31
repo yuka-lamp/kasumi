@@ -25,11 +25,12 @@
 PCヘッダー
 --------------------------------------*/
 #header #pc-header {
-  background: #000
+  background: #000;
+  border-bottom: 3px solid #C8963E;
 }
 
 #header #pc-header ul {
-  border-bottom: 3px solid #C8963E;
+  margin: 0
 }
 
 #header #pc-header ul li {

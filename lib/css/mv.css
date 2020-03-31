@@ -4,8 +4,9 @@
 #mv .bg-slider {
   position: relative;
   width: 100vw;
-  height: 627px;
+  height: 680px;
 }
+
 #mv .left {
   width: 16%;
   text-align: center;
@@ -33,6 +34,7 @@
 #mv .left .content {
   padding: 15px;
   box-sizing: border-box;
+  height: 592px
 }
 
 #mv .left .content .logo {
@@ -41,8 +43,15 @@
   margin: 1rem 0
 }
 
+#mv .left .content .copy {
+  display: flex;
+  justify-content: center;
+}
+
 #mv .left .content .copy p.serif {
-  display: inline-block;
+  margin: 1rem 6px;
+  line-height: 1.4rem;
+  font-size: 1.1rem;
 }
 
 #mv .left .content .tel-btn {
@@ -78,6 +87,7 @@
 }
 
 @media(max-width:1025px) {
+
   /*--スマホよこ--*/
   #mv .left {
     display: none;

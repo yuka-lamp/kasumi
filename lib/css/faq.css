@@ -1,0 +1,74 @@
+/*------------------------------------------------------
+FAQ
+------------------------------------------------------*/
+#faq .table {
+  width: 80%;
+  margin: 0 auto
+}
+
+#faq>.wrap>div {
+  margin-bottom: 2rem
+}
+
+#faq dl:first-child {
+  border-top: 1px solid #EBF0E6;
+}
+
+#faq dl {
+  margin: 0;
+  border-bottom: 1px solid #EBF0E6;
+  cursor: pointer;
+  position: relative;
+  background: #fff
+}
+
+#faq dl dt {
+  font-weight: bold;
+  position: relative;
+  display: block;
+  padding: 1rem 3rem;
+}
+
+#faq dl dd {
+  margin: 1rem;
+  display: none;
+  font-size: 0.9rem
+}
+
+#faq dl dd p {
+  margin: 0
+}
+
+#faq dl::before {
+  font-family: 'Libre Baskerville', serif;
+  content: 'Q';
+  font-size: 22px;
+  margin-right: 1rem;
+  color: #8C0B18;
+  ;
+  position: absolute;
+  left: 10px;
+  top: 12px
+}
+
+#faq dl::after {
+  content: '+';
+  font-size: 2rem;
+  color: #8C0B18;
+  position: absolute;
+  right: 15px;
+  top: 3px
+}
+
+/*--------------------------------------------レスポンシブ*/
+
+@media(max-width:480px) {
+  #faq .table {
+    width: 100%
+  }
+  #faq dl {
+    margin: 0;
+    border-bottom: 1px solid #EBF0E6;
+    cursor: pointer;
+  }
+}

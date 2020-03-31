@@ -1,10 +1,13 @@
 /*--------------------------------------
 プラン紹介
 --------------------------------------*/
-#plan-intro {}
+#plan-intro {
+}
 
 #plan-intro .name-border {
   position: relative;
+  width: 60%;
+  margin: 0 auto
 }
 
 #plan-intro .name {
@@ -73,12 +76,14 @@
 }
 
 #plan-intro .content ul {
-  margin: 0
+  margin: 0;
+  justify-content: center;
 }
 
 #plan-intro .content ul li {
   width: 19%;
   text-align: center;
+  margin: 0 10px
 }
 
 #plan-intro .content h3 {
@@ -98,13 +103,15 @@
 @media(max-width:678px) {
 
   /*--スマホよこ--*/
+  #plan-intro .name-border {
+    width: 100%;
+  }
   #plan-intro .content {
     padding: 1rem;
   }
 
   #plan-intro .content ul {
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   #plan-intro .content ul li {

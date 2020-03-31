@@ -16,10 +16,10 @@ $wp_url = get_template_directory_uri(); ?>
           </div>
           <div class="pc-flex">
             <div class="btn-wrap">
-              <a class="flex align-center" href="#">空き情報を確認する</a>
+              <a class="flex align-center" href="<?php echo $home ?>/booking-calendar">空き情報を確認する</a>
             </div>
             <div class="btn-wrap">
-              <a class="flex align-center" href="#">お問い合わせ</a>
+              <a class="flex align-center" href="<?php echo $home ?>/contact">お問い合わせ</a>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ $wp_url = get_template_directory_uri(); ?>
         <div class="">
           <p>〇〇店(本店)</p>
           <div class="flex">
-            <div class="right-l">
+            <div class="right-c">
               <p>〒000-0000 京都市下京区東塩小路町736番地3階<a href="#" class="eng" target="_blank">map</a></p>
               <p><span>TEL</span>000-0000-0000</p>
               <p><span>営業時間</span>10:00~18:00 ※月曜定休</p>
@@ -84,7 +84,16 @@ $wp_url = get_template_directory_uri(); ?>
                 <li><a href="<?php echo $home ?>/gallery">フォトギャラリー</a></li>
                 <li><a href="<?php echo $home ?>/faq">よくあるご質問</a></li>
                 <li><a href="<?php echo $home ?>/blog">ブログ</a></li>
+                <li><a href="<?php echo $home ?>/contact">お問い合わせ</a></li>
               </ul>
+            </div>
+            <div class="right-l flex align-center">
+              <div class="">
+                <p>公式LINE</p>
+                <div class="img-wrap">
+                  <img src="https://qr-official.line.me/sid/M/597wiann.png">
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -102,8 +111,9 @@ $wp_url = get_template_directory_uri(); ?>
   </div>
   <div class="sns">
     <ul>
-      <li><a href="#" target="_blank"><img src="<?php echo $wp_url ?>/lib/images/common/sns_tw.png" alt="Twitterアイコン"></a></li>
-      <li><a href="#" target="_blank"><img src="<?php echo $wp_url ?>/lib/images/common/sns_inst.png" alt="Instagramアイコン"></a></li>
+      <li><a href="https://twitter.com/katchu_kasumi" target="_blank"><img src="<?php echo $wp_url ?>/lib/images/common/sns_tw.png" alt="Twitterアイコン"></a></li>
+      <li><a href="https://www.instagram.com/katchu.kasumi/" target="_blank"><img src="<?php echo $wp_url ?>/lib/images/common/sns_inst.png" alt="Instagramアイコン"></a></li>
+      <li><a href="https://www.facebook.com/katchu.kasumi" target="_blank"><img src="<?php echo $wp_url ?>/lib/images/common/sns_fb.png" alt="Facebookアイコン"></a></li>
     </ul>
   </div>
 </footer>

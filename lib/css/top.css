@@ -53,9 +53,12 @@ about
 /*--------------------------------------
 plan
 --------------------------------------*/
+#plan .content {
+  margin: 0 0 5rem 0
+}
+
 #plan .flex {
   position: relative;
-  margin: 0 0 5rem 0
 }
 
 #plan .flex::after {
@@ -142,6 +145,10 @@ plan
   #plan .content:nth-child(2n) .txt-wrap {
     width: 100%;
     position: relative;
+  }
+
+  #plan .flex::after {
+    display: none;
   }
 }
 
@@ -281,10 +288,11 @@ access
 }
 
 #access .mapwrap .txt-wrap h3, #access .mapwrap .txt-wrap p {
-  color: #fff!important;
+  color: #fff !important;
 }
 
 @media(max-width:678px) {
+
   /*--スマホよこ--*/
   #access .mapwrap .map {
     width: 100%;
@@ -315,16 +323,16 @@ access
 }
 
 #access .train li h3 {
-  font-size: 1rem!important
+  font-size: 1rem !important
 }
 
 #access .train li p {
-  margin: 1rem 0 0 0!important;
+  margin: 1rem 0 0 0 !important;
   padding: 0
 }
 
-
 @media(max-width:678px) {
+
   /*--スマホよこ--*/
   #access .train li {
     width: 100%;

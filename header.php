@@ -22,6 +22,7 @@ $wp_url = get_template_directory_uri(); ?>
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/concept.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/plan.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/flow.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/faq.css">
 <?php wp_head(); ?>
 <?php if (!is_user_logged_in()): ?>
 <!-- ここにGAトラッキングタグ -->
@@ -49,8 +50,8 @@ $slug = $post_obj->post_name;
         </a>
       </div>
       <div class="copy">
-        <p class="serif">キ<br>ャ<br>ッ<br>チ<br>コ<br>ピ<br>ー<br>が<br>入<br>り<br>ま<br>す<br>。</p>
-        <p class="serif">キ<br>ャ<br>ッ<br>チ<br>コ<br>ピ<br>ー<br>が<br>入<br>り<br>ま<br>す<br>。</p>
+        <p class="serif">あ<br>な<br>た<br>の<br>魅<br>力<br>を<br>引<br>き<br>出<br>す</p>
+        <p class="serif">本<br>格<br>派<br>の<br>オ<br>リ<br>ジ<br>ナ<br>ル<br>甲<br>冑<br>体<br>験</p>
       </div>
       <div class="tel-btn">
         <a href="tel:000-0000-0000"><img src="<?php echo $wp_url ?>/lib/images/common/tel_01.png" alt="甲冑体験studioかすみの電話番号"></a>
@@ -125,7 +126,7 @@ $slug = $post_obj->post_name;
               <li><a class="serif" href="<?php echo $home ?>/concept"><span class="eng">concept</span>コンセプト</a></li>
               <li><a class="serif" href="<?php echo $home ?>/plan"><span class="eng">plan</span>プラン</a></li>
               <li><a class="serif" href="<?php echo $home ?>/flow"><span class="eng">flow</span>体験の流れ</a></li>
-              <li><a class="serif" href="<?php echo $home ?>/gallery"><span class="eng">gallery</span>フォトギャラリー</a></li>
+              <li><a class="serif" href="<?php echo $home ?>/photo"><span class="eng">gallery</span>フォトギャラリー</a></li>
               <li><a class="serif" href="<?php echo $home ?>/faq"><span class="eng">faq</span>よくあるご質問</a></li>
               <li><a class="serif" href="<?php echo $home ?>/blog"><span class="eng">blog</span>ブログ</a></li>
             </ul>
@@ -142,7 +143,7 @@ $slug = $post_obj->post_name;
           <li><a class="serif" href="<?php echo $home ?>/concept"><span class="eng">concept</span>コンセプト</a></li>
           <li><a class="serif" href="<?php echo $home ?>/plan"><span class="eng">plan</span>プラン</a></li>
           <li><a class="serif" href="<?php echo $home ?>/flow"><span class="eng">flow</span>体験の流れ</a></li>
-          <li><a class="serif" href="<?php echo $home ?>/gallery"><span class="eng">gallery</span>フォトギャラリー</a></li>
+          <li><a class="serif" href="<?php echo $home ?>/photo"><span class="eng">gallery</span>フォトギャラリー</a></li>
           <li><a class="serif" href="<?php echo $home ?>/faq"><span class="eng">faq</span>よくあるご質問</a></li>
           <li><a class="serif" href="<?php echo $home ?>/blog"><span class="eng">blog</span>ブログ</a></li>
         </ul>
