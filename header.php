@@ -44,7 +44,7 @@ $slug = $post_obj->post_name;
   <div class="left">
     <div class="content">
       <div class="img-wrap">
-        <a href="<?php echo $wp_url ?>">
+        <a href="<?php echo $home ?>">
         <img class="logo" src="<?php echo $wp_url ?>/lib/images/common/logo_01.png" alt="<?php bloginfo( 'name' ); ?>">
         </a>
       </div>
@@ -60,7 +60,7 @@ $slug = $post_obj->post_name;
       <a class="serif" href="#">空き状況を確認する</a>
     </div>
   </div>
-  <div class="top-news flex">
+  <!-- <div class="top-news flex">
     <ul class="news-slider">
     <?php
     $args = array(
@@ -85,7 +85,7 @@ $slug = $post_obj->post_name;
     endforeach;
     wp_reset_postdata(); ?>
     </ul>
-  </div>
+  </div> -->
 </section>
 <!-- トップページメインビジュアル終了 -->
 
@@ -100,7 +100,7 @@ $slug = $post_obj->post_name;
       </div>
     </div>
     <div class="img-wrap">
-      <a href="<?php echo $wp_url ?>">
+      <a href="<?php echo $home ?>">
       <img class="logo" src="<?php echo $wp_url ?>/lib/images/common/logo_02.png" alt="<?php bloginfo( 'name' ); ?>">
       </a>
     </div>

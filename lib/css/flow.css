@@ -1,10 +1,96 @@
 /*--------------------------------------
 プラン
 --------------------------------------*/
-#plan-intro {}
+#flow-intro ul li {
+  border: 2px solid #C8963E;
+  margin-bottom: 1rem
+}
 
-#plan-intro {}
+#flow-intro ul li .img-wrap {
+  width: 30%;
+  position: relative;
+}
+
+#flow-intro ul li .img-wrap::after {
+  content: '';
+  width: 54px;
+  height: 54px;
+  background: url('../images/flow/num_01.png');
+  position: absolute;
+  top: calc(50% - 27px);
+  right: -27px;
+}
+
+#flow-intro ul li:nth-child(1) .img-wrap::after {
+  background: url('../images/flow/num_01.png');
+  background-size: cover;
+}
+
+#flow-intro ul li:nth-child(2) .img-wrap::after {
+  background: url('../images/flow/num_02.png');
+  background-size: cover;
+}
+
+#flow-intro ul li:nth-child(3) .img-wrap::after {
+  background: url('../images/flow/num_03.png');
+  background-size: cover;
+}
+
+#flow-intro ul li:nth-child(4) .img-wrap::after {
+  background: url('../images/flow/num_04.png');
+  background-size: cover;
+}
+
+#flow-intro ul li:nth-child(5) .img-wrap::after {
+  background: url('../images/flow/num_05.png');
+  background-size: cover;
+}
+
+#flow-intro ul li .txt-wrap {
+  width: 70%;
+  padding: 2rem 3rem;
+  background: #fff
+}
+
+#flow-intro ul li .txt-wrap h3 {
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem
+}
+
+#flow-intro ul li .txt-wrap a {
+  text-decoration: underline;
+}
+
+#flow-intro ul li .txt-wrap a:hover {
+  text-decoration: underline !important;
+}
+
+#flow-intro ul li .img-wrap::after {
+  content: ''
+}
 
 @media(max-width:678px) {
+
   /*--スマホよこ--*/
+  #flow-intro ul li .img-wrap {
+    width: 100%;
+  }
+
+  #flow-intro ul li .txt-wrap {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  #flow-intro ul li .txt-wrap h3 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 1rem
+  }
+
+  #flow-intro ul li .img-wrap::after {
+    top: auto;
+    bottom: -27px;
+    right: calc(50% - 27px);
+  }
 }
