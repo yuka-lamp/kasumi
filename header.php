@@ -122,7 +122,7 @@ $slug = $post_obj->post_name;
         <nav class="gnav">
           <div class="gnav__wrap">
             <ul class="gnav__menu">
-              <li><a class="serif" href="<?php echo $home ?>/consept"><span class="eng">consept</span>コンセプト</a></li>
+              <li><a class="serif" href="<?php echo $home ?>/concept"><span class="eng">concept</span>コンセプト</a></li>
               <li><a class="serif" href="<?php echo $home ?>/plan"><span class="eng">plan</span>プラン</a></li>
               <li><a class="serif" href="<?php echo $home ?>/flow"><span class="eng">flow</span>体験の流れ</a></li>
               <li><a class="serif" href="<?php echo $home ?>/gallery"><span class="eng">gallery</span>フォトギャラリー</a></li>
@@ -139,7 +139,7 @@ $slug = $post_obj->post_name;
     <nav id="pc-header">
       <div class="content wrap">
         <ul class="flex">
-          <li><a class="serif" href="<?php echo $home ?>/consept"><span class="eng">consept</span>コンセプト</a></li>
+          <li><a class="serif" href="<?php echo $home ?>/concept"><span class="eng">concept</span>コンセプト</a></li>
           <li><a class="serif" href="<?php echo $home ?>/plan"><span class="eng">plan</span>プラン</a></li>
           <li><a class="serif" href="<?php echo $home ?>/flow"><span class="eng">flow</span>体験の流れ</a></li>
           <li><a class="serif" href="<?php echo $home ?>/gallery"><span class="eng">gallery</span>フォトギャラリー</a></li>

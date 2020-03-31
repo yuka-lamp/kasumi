@@ -1,10 +1,37 @@
 /*--------------------------------------
 プラン
 --------------------------------------*/
-#plan-intro {}
+#concept-intro {
+  padding: 0 0 80px 0
+}
 
-#plan-intro {}
+#concept-intro ul li {
+  margin-bottom: 2rem;
+  flex-flow: row-reverse
+}
+
+#concept-intro ul li .img-wrap, #concept-intro ul li .txt-wrap {
+  width: 45%;
+}
+
+#concept-intro ul li .txt-warp {
+  padding: 0 3rem
+}
+
+#concept-intro ul li .txt-wrap h3 {
+  font-size: 1.5rem !important;
+  margin: 1.5rem 0
+}
 
 @media(max-width:678px) {
+
   /*--スマホよこ--*/
+  #concept-intro ul li {
+    flex-flow: wrap;
+  }
+
+  #concept-intro ul li .img-wrap, #concept-intro ul li .txt-wrap {
+    width: 100%;
+    margin-bottom: 1rem
+  }
 }
