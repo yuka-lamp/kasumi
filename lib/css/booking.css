@@ -1,0 +1,145 @@
+/*------------------------------------------------------
+予約カレンダー：テキスト
+------------------------------------------------------*/
+.booking-txt {
+  text-align: center;
+  margin-bottom: 5rem
+}
+
+.booking-txt h3 {
+  color: #C8963E;
+  font-size: 1.5rem !important;
+  padding: 0 0 1rem 0;
+}
+
+.booking-txt h3::after {
+  content: '';
+  width: 100px;
+  height: 2px;
+  margin: 1.5rem auto;
+  display: block;
+  background: #C8963E;
+}
+
+@media screen and (max-width: 678px) {
+  .booking-txt p {
+    text-align: left;
+  }
+}
+
+/*------------------------------------------------------
+予約カレンダー：日にち選択
+------------------------------------------------------*/
+#booking-c {}
+
+#booking-c table {
+  position: relative;
+  margin: 0;
+  background: #fff
+}
+
+#booking-c .calendar-caption {
+  position: absolute;
+  top: -4rem;
+  width: 100%;
+  text-align: center;
+  color: #000
+}
+
+#booking-c .header-row .week-title {
+  font-family: 'Noto Serif JP', serif;
+  background: #8C0B18;
+  color: #fff;
+  padding: .5rem 0;
+  border-left: 2px solid #720C16;
+}
+
+#booking-c .header-row .week-title:first-child {
+  border: none
+}
+
+#booking-c .mix-calendar td, #booking-c .multiple-calendar td, #booking-c .monthly-calendar td {
+  border: 1px solid #eee
+}
+
+#booking-c .day-box.no-day {
+  background: #fff
+}
+
+@media screen and (max-width: 678px) {}
+
+/*------------------------------------------------------
+予約カレンダー：時間選択
+------------------------------------------------------*/
+#booking-c .day-calendar table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto
+}
+
+#booking-c .mtssb-timetable-link caption {
+  position: absolute;
+  top: -4rem;
+  width: 100%;
+  text-align: center;
+  color: #000
+}
+
+#booking-c tr th {
+  border-radius: 0
+}
+
+#booking-c tr:first-child th.day-left, #booking-c tr:first-child th.day-right {
+  font-family: 'Noto Serif JP', serif;
+  background: #8C0B18;
+  color: #fff;
+  padding: .5rem 0;
+  border: none !important;
+  border-left: 2px solid #720C16 !important;
+}
+
+.mtssb-daily-action {
+  text-align: center;
+  margin: 1rem 0 0 0
+}
+
+.mtssb-daily-action [type="button"] {
+  text-align: center !important;
+  border: 1px solid #000 !important;
+  padding: 3px 0 !important;
+  width: 200px !important;
+}
+
+@media screen and (max-width: 678px) {
+  #booking-c .day-calendar table {
+    width: 100%;
+  }
+}
+
+/*------------------------------------------------------
+予約カレンダー：時間選択
+------------------------------------------------------*/
+.content-form fieldset {
+  width: 100% !important;
+  padding: 1rem !important;
+  border: none !important
+}
+
+.content-form legend {
+  font-family: 'Noto Serif JP', serif;
+  border-bottom: 2px solid #C8963E;
+  color: #C8963E;
+  padding: 1rem 0 !important;
+  margin: 1rem 0 !important;
+  text-align: center;
+}
+
+.content-form table  {
+  border: 1px solid #dddddd!important;
+  border-collapse: collapse!important;
+  border-spacing: 0!important;
+}
+
+.content-form th, .content-form td {
+  padding: 1rem!important
+}

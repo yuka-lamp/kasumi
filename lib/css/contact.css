@@ -1,0 +1,78 @@
+/*------------------------------------------------------
+お問い合わせ
+------------------------------------------------------*/
+#contact-form form {
+width: 50%;
+margin: 0 auto;
+box-sizing: border-box;
+}
+
+.haveto {
+background: #8C0B18 !important;
+border-radius: 4px !important;
+color: #fff !important;
+font-size: 0.8rem !important;
+padding: 3px 9px !important;
+margin: .1rem 0 0 .3rem !important;
+}
+
+#contact-form input {
+text-align: left;
+color: #333;
+padding-top: 1rem .5rem !important;
+}
+
+#contact-form label {
+  width: 100%;
+}
+
+#contact-form input, #contact-form textarea {
+display: block;
+margin-bottom: 1rem;
+}
+
+#contact-form input, #contact-form textarea {
+width: 100% !important;
+padding: .5rem !important;
+overflow: hidden;
+box-sizing: border-box;
+}
+
+#contact-form dd {
+margin-inline-start: 0 !important;
+margin-top: 1rem
+}
+
+#contact-form .wpcf7-radio span.wpcf7-list-item {
+display: flex !important;
+justify-content: flex-start !important;
+}
+
+#contact-form .wpcf7-radio input {
+display: inline-block;
+width: 35px !important;
+}
+
+#contact-form button, #contact-form input[type="submit"] {
+width: 240px !important;
+margin: 2rem auto !important;
+text-align: center;
+}
+
+/*--------------------------------------------レスポンシブ*/
+@media(max-width:768px) {
+/*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+#contact-faq p {
+text-align: left;
+}
+#contact-form form {
+width: 100%;
+}
+
+#contact-form form p:first-child, #contact-form form p label span {
+width: 100%
+}
+}

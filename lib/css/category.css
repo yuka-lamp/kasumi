@@ -27,16 +27,18 @@
 }
 
 #category ul li .txt-wrap {
-  padding: 1rem 0 0 0
+  padding: .5rem 0 0 0
 }
 
-#category h3, #category time {
+#category h3 {
   font-size: .9rem !important;
   margin: 0
 }
 
 #category time {
-  color: #C8963E
+  color: #C8963E;
+  font-size: .8rem !important;
+  margin: 0
 }
 
 @media screen and (max-width: 678px) {

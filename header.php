@@ -26,6 +26,8 @@ $wp_url = get_template_directory_uri(); ?>
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/gallery.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/category.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/single.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/booking.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/contact.css">
 <?php wp_head(); ?>
 <?php if (!is_user_logged_in()): ?>
 <!-- ここにGAトラッキングタグ -->
@@ -53,8 +55,8 @@ $slug = $post_obj->post_name;
         </a>
       </div>
       <div class="copy">
-        <p class="serif">あ<br>な<br>た<br>の<br>魅<br>力<br>を<br>引<br>き<br>出<br>す</p>
         <p class="serif">本<br>格<br>派<br>の<br>オ<br>リ<br>ジ<br>ナ<br>ル<br>甲<br>冑<br>体<br>験</p>
+        <p class="serif">あ<br>な<br>た<br>の<br>魅<br>力<br>を<br>引<br>き<br>出<br>す</p>
       </div>
       <div class="tel-btn">
         <a href="tel:000-0000-0000"><img src="<?php echo $wp_url ?>/lib/images/common/tel_01.png" alt="甲冑体験studioかすみの電話番号"></a>
@@ -90,6 +92,17 @@ $slug = $post_obj->post_name;
     wp_reset_postdata(); ?>
     </ul>
   </div> -->
+  <div class="sp-only-wrap">
+    <div class="">
+      <div class="img-wrap sp-only">
+        <img class="logo" src="<?php echo $wp_url ?>/lib/images/common/logo_02.png" alt="<?php bloginfo( 'name' ); ?>">
+      </div>
+      <div class="copy sp-only">
+        <p class="serif">本<br>格<br>派<br>の<br>オ<br>リ<br>ジ<br>ナ<br>ル<br>甲<br>冑<br>体<br>験</p>
+        <p class="serif">あ<br>な<br>た<br>の<br>魅<br>力<br>を<br>引<br>き<br>出<br>す</p>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- トップページメインビジュアル終了 -->
 
@@ -102,6 +115,9 @@ $slug = $post_obj->post_name;
         <?php if (is_category() || is_single()): ?>
         <p class="eng">blog</p>
         <h2 class="serif">ブログ</h2>
+        <?php elseif (is_post_type_archive()): ?>
+        <p class="eng">gallery</p>
+        <h2 class="serif">ギャラリー</h2>
         <?php else: ?>
         <p class="eng"><?php echo $slug; ?></p>
         <h2 class="serif"><?php echo get_the_title(); ?></h2>

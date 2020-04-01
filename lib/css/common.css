@@ -82,7 +82,9 @@ ul {
   background: #000;
   width: 300px;
   margin: 0 auto;
-  transition: .5s
+  transition: .5s;
+  font-size: .9rem;
+  letter-spacing: .2rem;
 }
 
 .btn01:hover a {

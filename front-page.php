@@ -60,7 +60,7 @@ get_header(); ?>
 
 <section id="gallery">
     <div class="sec">
-      <a href="<?php echo $home ?>/gallery">
+      <a href="<?php echo $home ?>/photo">
       <?php
       $arg = array(
         'posts_per_page' => 5,
@@ -143,7 +143,7 @@ get_header(); ?>
             <div class="img-wrap">
               <img src="<?php echo $i_l; ?>" alt="<?php echo $t; ?>">
             </div>
-            <p class="serif"><?php echo $t; ?></p>
+            <p class=""><?php echo $t; ?></p>
             <p class="eng"><?php echo get_the_date(); ?></p>
           </a>
         </li>
@@ -151,7 +151,7 @@ get_header(); ?>
       </ul>
       <?php endif; ?>
       <div class="btn01">
-        <a class="eng" href="<?php echo $home ?>/blog">read more
+        <a class="eng" href="<?php echo $home ?>/category/blog">read more
         </a>
       </div>
   </div>

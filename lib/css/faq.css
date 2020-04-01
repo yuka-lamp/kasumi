@@ -11,12 +11,12 @@ FAQ
 }
 
 #faq dl:first-child {
-  border-top: 1px solid #EBF0E6;
+  border-top: 1px solid #C8963E;
 }
 
 #faq dl {
   margin: 0;
-  border-bottom: 1px solid #EBF0E6;
+  border-bottom: 1px solid #C8963E;
   cursor: pointer;
   position: relative;
   background: #fff
@@ -44,7 +44,7 @@ FAQ
   content: 'Q';
   font-size: 22px;
   margin-right: 1rem;
-  color: #8C0B18;
+  color: #C8963E;
   ;
   position: absolute;
   left: 10px;
@@ -53,8 +53,9 @@ FAQ
 
 #faq dl::after {
   content: '+';
+  font-family: 'Libre Baskerville', serif;
   font-size: 2rem;
-  color: #8C0B18;
+  color: #C8963E;
   position: absolute;
   right: 15px;
   top: 3px
