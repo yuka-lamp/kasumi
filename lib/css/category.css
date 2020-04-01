@@ -81,12 +81,13 @@
   font-family: 'Libre Baskerville', serif;
   margin: 0 5px!important;
   padding: 10px 20px!important;
-  background: #EBE4CC!important;
-  border: none!important;
+  background: #fff!important;
+  border: 1px solid #C8963E!important;
+  color: #C8963E!important
 }
 
 .wp-pagenavi span.current {
   border: none;
-  color: #fff;
-  background: #8C0B18!important;
+  color: #fff!important;
+  background: #C8963E!important;
 }

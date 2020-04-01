@@ -103,7 +103,7 @@ $wp_url = get_template_directory_uri(); ?>
   <div class="content-02">
     <div class="wrap">
       <ul>
-        <li><a href="<?php echo $home ?>/privacy policy">プライバシーポリシー</a></li>
+        <li><a href="<?php echo $home ?>/privacypolicy">プライバシーポリシー</a></li>
         <li><a href="<?php echo $home ?>/sitemap">サイトマップ</a></li>
         <li><a href="<?php echo $home ?>/flow">permalink</a></li>
       </ul>

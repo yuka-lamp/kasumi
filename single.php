@@ -4,7 +4,7 @@ $wp_url = get_template_directory_uri();
 get_header(); ?>
 
 <?php if (have_posts()): while (have_posts()):the_post(); ?>
-<article class="post-content sec">
+<article id="single" class="post-content sec">
 <div class="wrap">
 <h2 class="postttl"><?php the_title(); ?></h2>
 <time datetime="<?php the_modified_date('Y.m.d') ?>"><?php the_modified_date('Y.m.d') ?></time>
