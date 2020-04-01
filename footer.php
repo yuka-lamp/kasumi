@@ -78,10 +78,10 @@ $wp_url = get_template_directory_uri(); ?>
             <div class="right-r">
               <ul>
                 <li><a href="<?php echo $home ?>">ホーム</a></li>
-                <li><a href="<?php echo $home ?>/consept">コンセプト</a></li>
+                <li><a href="<?php echo $home ?>/concept">コンセプト</a></li>
                 <li><a href="<?php echo $home ?>/plan">プラン</a></li>
                 <li><a href="<?php echo $home ?>/flow">体験の流れ</a></li>
-                <li><a href="<?php echo $home ?>/gallery">フォトギャラリー</a></li>
+                <li><a href="<?php echo $home ?>/photo">フォトギャラリー</a></li>
                 <li><a href="<?php echo $home ?>/faq">よくあるご質問</a></li>
                 <li><a href="<?php echo $home ?>/category/blog">ブログ</a></li>
                 <li><a href="<?php echo $home ?>/contact">お問い合わせ</a></li>
