@@ -6,11 +6,13 @@
 #submv .bg {
   height: 300px;
   position: relative;
+  background: url('../images/submv/blog.png');
+  background-size: cover;
 }
 
 #submv .content {
   width: 100%;
-  filter: drop-shadow(0 0 0 1rem #333);
+  filter: drop-shadow(0 0 1rem #333);
 }
 
 #submv .content p {
@@ -87,10 +89,7 @@
   background-size: cover;
 }
 
-#submv.blog .bg {
-  background: url('../images/submv/blog.png');
-  background-size: cover;
-}
+#submv.blog .bg {}
 
 #submv.booking .bg, #submv.booking-calendar .bg, #submv.booking-thanks .bg, #submv.booking-form .bg {
   background: url('../images/submv/booking.png');
@@ -109,6 +108,7 @@
     top: 1rem;
     left: 1rem
   }
+
   #submv .tel {
     display: none;
   }

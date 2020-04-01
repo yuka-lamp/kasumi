@@ -83,7 +83,7 @@ $wp_url = get_template_directory_uri(); ?>
                 <li><a href="<?php echo $home ?>/flow">体験の流れ</a></li>
                 <li><a href="<?php echo $home ?>/gallery">フォトギャラリー</a></li>
                 <li><a href="<?php echo $home ?>/faq">よくあるご質問</a></li>
-                <li><a href="<?php echo $home ?>/blog">ブログ</a></li>
+                <li><a href="<?php echo $home ?>/category/blog">ブログ</a></li>
                 <li><a href="<?php echo $home ?>/contact">お問い合わせ</a></li>
               </ul>
             </div>

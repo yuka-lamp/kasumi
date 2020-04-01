@@ -23,6 +23,9 @@ $wp_url = get_template_directory_uri(); ?>
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/plan.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/flow.css">
 <link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/faq.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/gallery.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/category.css">
+<link rel="stylesheet" href="<?php echo $wp_url ?>/lib/css/single.css">
 <?php wp_head(); ?>
 <?php if (!is_user_logged_in()): ?>
 <!-- ここにGAトラッキングタグ -->
@@ -96,8 +99,13 @@ $slug = $post_obj->post_name;
 <section id="submv" class="<?php echo $slug; ?>">
     <div class="bg flex align-center">
       <div class="content">
+        <?php if (is_category() || is_single()): ?>
+        <p class="eng">blog</p>
+        <h2 class="serif">ブログ</h2>
+        <?php else: ?>
         <p class="eng"><?php echo $slug; ?></p>
         <h2 class="serif"><?php echo get_the_title(); ?></h2>
+        <?php endif; ?>
       </div>
     </div>
     <div class="img-wrap">
@@ -128,7 +136,7 @@ $slug = $post_obj->post_name;
               <li><a class="serif" href="<?php echo $home ?>/flow"><span class="eng">flow</span>体験の流れ</a></li>
               <li><a class="serif" href="<?php echo $home ?>/photo"><span class="eng">gallery</span>フォトギャラリー</a></li>
               <li><a class="serif" href="<?php echo $home ?>/faq"><span class="eng">faq</span>よくあるご質問</a></li>
-              <li><a class="serif" href="<?php echo $home ?>/blog"><span class="eng">blog</span>ブログ</a></li>
+              <li><a class="serif" href="<?php echo $home ?>/category/blog"><span class="eng">blog</span>ブログ</a></li>
             </ul>
           </div>
         </nav>
@@ -136,6 +144,7 @@ $slug = $post_obj->post_name;
       </div>
     </div>
     <!-- スマホヘッダー終了 -->
+
     <!-- PCヘッダー -->
     <nav id="pc-header">
       <div class="content wrap">
@@ -145,12 +154,23 @@ $slug = $post_obj->post_name;
           <li><a class="serif" href="<?php echo $home ?>/flow"><span class="eng">flow</span>体験の流れ</a></li>
           <li><a class="serif" href="<?php echo $home ?>/photo"><span class="eng">gallery</span>フォトギャラリー</a></li>
           <li><a class="serif" href="<?php echo $home ?>/faq"><span class="eng">faq</span>よくあるご質問</a></li>
-          <li><a class="serif" href="<?php echo $home ?>/blog"><span class="eng">blog</span>ブログ</a></li>
+          <li><a class="serif" href="<?php echo $home ?>/category/blog"><span class="eng">blog</span>ブログ</a></li>
         </ul>
       </div>
     </nav>
     <!-- PCヘッダー終了 -->
+
+    <!-- パンくず -->
+    <?php if (!is_front_page() && !is_home()) {
+    if (function_exists('yoast_breadcrumb')) {
+        yoast_breadcrumb('<div id="breadcrumbs" class="pc">','</div>');
+      }
+    } ?>
+    <!-- パンくず終了 -->
+
+    <!-- 固定ボタン -->
     <div class="fix-btn">
       <a href="http://kasumi.local/booking-calendar/"><img src="<?php echo $wp_url ?>/lib/images/common/booking_btn.png" alt="空き情報を確認"></a>
     </div>
+    <!-- 固定ボタン終了 -->
 </header>

@@ -1,0 +1,56 @@
+/*------------------------------------------------------
+#blog
+------------------------------------------------------*/
+
+#blog {
+  margin: 0 auto 4rem auto
+}
+
+#blog ul {
+  margin: 0;
+  border-top: 1px solid #EBF0E6;
+  cursor: pointer;
+  position: relative;
+}
+
+#blog ul li {
+  font-weight: bold;
+  position: relative;
+  display: block;
+  padding: 1rem;
+  border-bottom: 1px solid #EBF0E6;
+}
+
+#blog ul li h3, #blog ul li p {
+  display: inline-block;
+  margin: 0;
+  color: #333
+}
+
+#blog ul li h3 {
+  font-size: 1rem!important;
+  display: block;
+}
+
+#blog ul li p {
+  padding: 0 10px 0 0;
+  color: #E95283;
+}
+
+@media(min-width:1025px) {
+  #blog ul {
+    margin: 0;
+    border-bottom: 1px solid #EBF0E6;
+    cursor: pointer;
+  }
+  #blog {
+    width: 60%;
+  }
+  #blog ul li {
+    padding: 1rem 3rem;
+  }
+  #blog ul li h3 {
+    display: inline-block;
+    padding: 0 0 0 1rem;
+  }
+}

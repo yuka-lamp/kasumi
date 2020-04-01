@@ -1,0 +1,18 @@
+/*------------------------------------------------------
+FAQ
+------------------------------------------------------*/
+#faq .table {
+  width: 80%;
+  margin: 0 auto
+}
+
+@media(max-width:480px) {
+  #faq .table {
+    width: 100%
+  }
+  #faq dl {
+    margin: 0;
+    border-bottom: 1px solid #EBF0E6;
+    cursor: pointer;
+  }
+}
